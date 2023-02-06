@@ -28,7 +28,7 @@ app.use('/api/events', require('./routes/events') );    //  peticiones
 
 //Escuchar peticiones 
 
-const puerto = process.env.PORT;
+const puerto = process.env.PORT || 3000;
 app.listen( puerto, ()=>{
     console.log(`corriendo en el puerto ${ puerto }`)
 })
